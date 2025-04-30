@@ -1,59 +1,97 @@
-# DispensaAngular
+📘 Dispensa Angular Interattiva
+Guida pratica e modulare per imparare Angular + TypeScript da zero, fino a realizzare mini-progetti e prepararsi all’esame dell'8 maggio.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+📚 Sommario
+Introduzione & Setup Ambiente
 
-## Development server
+TypeScript: Fondamenta per Angular
 
-To start a local development server, run:
+Componenti, Template & Data Binding
 
-```bash
-ng serve
-```
+Servizi e Dependency Injection
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Routing e Navigazione
 
-## Code scaffolding
+Forms Template-Driven
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+RxJS & Observable
 
-```bash
-ng generate component component-name
-```
+Mini-Progetto 1: Todo List
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Mini-Progetto 2: Blog Reader
 
-```bash
-ng generate --help
-```
+Ripasso Finale & Mock Test
 
-## Building
+1. Introduzione & Setup Ambiente
+Che cos’è Angular e perché usarlo
 
-To build the project run:
+Requisiti: Node.js, npm, Angular CLI
 
-```bash
-ng build
-```
+Comandi base: ng new, ng serve, ng generate
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+2. TypeScript: Fondamenta per Angular
+Tipi e interfacce
 
-## Running unit tests
+Classi ed ereditarietà
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Moduli ES6 e import/export
 
-```bash
-ng test
-```
+3. Componenti, Template & Data Binding
+Creazione di un componente (ng generate component)
 
-## Running end-to-end tests
+Decoratore @Component
 
-For end-to-end (e2e) testing, run:
+Interpolation, Property Binding, Event Binding
 
-```bash
-ng e2e
-```
+Input/Output e comunicazione tra componenti
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+4. Servizi e Dependency Injection
+Cos’è un servizio in Angular
 
-## Additional Resources
+Decoratore @Injectable
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Registrazione e iniezione nel root o in moduli specifici
+
+5. Routing e Navigazione
+Configurare il RouterModule
+
+Definire rotte, parametri, route guards
+
+Link nel template con routerLink
+
+6. Forms Template-Driven
+Importare FormsModule
+
+Creare un form template-driven
+
+Validazioni base e gestione degli errori
+
+7. RxJS & Observable
+Cos’è RxJS e perché usarlo
+
+Creazione di un Observable
+
+Operatorii base: map, filter, subscribe
+
+8. Mini-Progetto 1: Todo List
+Descrizione e requisiti
+
+Struttura componenti
+
+Servizio per CRUD locale
+
+9. Mini-Progetto 2: Blog Reader
+Fetch di dati da API
+
+Visualizzazione lista e dettaglio
+
+Routing dinamico
+
+10. Ripasso Finale & Mock Test
+Esercizi di prova
+
+Checklist argomenti chiave
+
+Consigli per l’esame
+
+© 2025 Mattia Morales
