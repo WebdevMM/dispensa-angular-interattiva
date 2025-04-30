@@ -1,0 +1,44 @@
+<div class="dispensa-container">
+  <h1>📘 Dispensa Angular Interattiva</h1>
+
+  <nav class="argomenti-nav">
+    <ul>
+      <li *ngFor="let sezione of sezioni">
+        <button (click)="mostraSezione(sezione.id)">{{ sezione.titolo }}</button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="contenuto-sezione" *ngIf="sezioneVisibile" [@cardAnimation]>
+    <section *ngIf="sezioneVisibile === 'introduzione'">
+      <app-introduzione></app-introduzione>
+    </section>
+    <section *ngIf="sezioneVisibile === 'typescript'">
+      <app-typescript></app-typescript>
+    </section>
+    <section *ngIf="sezioneVisibile === 'componenti'">
+      <app-componenti></app-componenti>
+    </section>
+    <section *ngIf="sezioneVisibile === 'servizi'">
+      <app-servizi></app-servizi>
+    </section>
+    <section *ngIf="sezioneVisibile === 'routing'">
+      <app-routing></app-routing>
+    </section>
+    <section *ngIf="sezioneVisibile === 'forms'">
+      <app-forms></app-forms>
+    </section>
+    <section *ngIf="sezioneVisibile === 'rxjs'">
+      <app-rxjs></app-rxjs>
+    </section>
+    <section *ngIf="sezioneVisibile === 'todo'">
+      <app-todo></app-todo>
+    </section>
+    <section *ngIf="sezioneVisibile === 'blog'">
+      <app-blog></app-blog>
+    </section>
+    <section *ngIf="sezioneVisibile === 'ripasso'">
+      <app-ripasso></app-ripasso>
+    </section>
+  </div>
+</div>

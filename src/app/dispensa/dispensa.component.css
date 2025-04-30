@@ -1,0 +1,115 @@
+/* dispensa.component.css */
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente per un look più "hero" iniziale */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Sfondo sfumato scuro */
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font di sistema Apple per eleganza */
+  padding: 20px;
+  overflow: auto; /* Permette lo scroll se il contenuto è troppo lungo */
+}
+
+.dispensa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* Maggiore larghezza per un look più ampio */
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.08); /* Sfondo semi-trasparente */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Ombra profonda e delicata */
+  backdrop-filter: blur(10px); /* Effetto vetro */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-weight: 600; /* Più enfasi sul titolo */
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.argomenti-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.argomenti-nav ul li button {
+  background-color: rgba(255, 255, 255, 0.15); /* Bottoni traslucidi */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.argomenti-nav ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px); /* Leggero sollevamento al hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenuto-sezione {
+  width: 100%;
+  margin-top: 40px;
+  opacity: 0;
+  transform: translateY(20px); /* Inizia leggermente spostato verso il basso */
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.contenuto-sezione.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contenuto-sezione > section {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05); /* Sfondo scheda traslucido */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.contenuto-sezione h2 {
+  color: #a7d9ed; /* Tono più chiaro per i titoli delle sezioni */
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Stili per il testo e altri elementi all'interno delle schede */
+.contenuto-sezione p,
+.contenuto-sezione li,
+.contenuto-sezione pre {
+  color: #eee;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.contenuto-sezione pre {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.contenuto-sezione ul {
+  list-style: disc;
+  padding-left: 25px;
+}
