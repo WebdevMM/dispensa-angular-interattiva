@@ -1,1 +1,51 @@
-<p>typescript works!</p>
+<section class="typescript">
+    <h2>TypeScript: Fondamenti per Angular</h2>
+
+    <p>
+        TypeScript è un superset di JavaScript che introduce i **tipi statici**.
+        Permette di scrivere codice più chiaro, sicuro e scalabile, ed è il linguaggio principale usato in Angular.
+    </p>
+
+    <h3>🔹 Tipi di base</h3>
+    <p>
+        In TypeScript possiamo dichiarare esplicitamente il tipo delle variabili:<br>
+        <code>string</code>, <code>number</code>, <code>boolean</code>, <code>any</code>, <code>unknown</code>, ecc.
+    </p>
+
+    <ul>
+        <li><strong>Nome:</strong> {{ nome }} <em>(string)</em></li>
+        <li><strong>Età:</strong> {{ eta }} <em>(number)</em></li>
+        <li><strong>Studente:</strong> {{ isStudente }} <em>(boolean)</em></li>
+    </ul>
+
+    <h3>🔹 Interfacce</h3>
+    <p>
+        Le interfacce permettono di definire la struttura di un oggetto.
+        Questo ci aiuta a garantire coerenza nel nostro codice.
+    </p>
+
+    <p><strong>Persona:</strong> {{ mostraInfo() }}</p>
+
+    <h3>📌 Codice TypeScript</h3>
+
+    <pre><code ngNonBindable>
+    interface Persona &#123;
+    nome: string;
+    cognome: string;
+    eta: number;
+    &#125;
+
+    let persona: Persona = &#123;
+    nome: 'Luca',
+    cognome: 'Rossi',
+    eta: 25
+    &#125;;
+</code></pre>
+
+    <h3>💡 Conclusione</h3>
+    <p>
+        TypeScript migliora la qualità del codice, rende più semplice trovare errori e aiuta a costruire applicazioni
+        Angular robuste.
+    </p>
+
+</section> 

@@ -1,97 +1,49 @@
-📘 Dispensa Angular Interattiva
-Guida pratica e modulare per imparare Angular + TypeScript da zero, fino a realizzare mini-progetti e prepararsi all’esame dell'8 maggio.
+# 📘 Dispensa Angular Interattiva
 
-📚 Sommario
-Introduzione & Setup Ambiente
+Una guida modulare e interattiva per apprendere Angular e TypeScript attraverso esempi, componenti standalone e progetti pratici. Pensata per chi vuole consolidare le basi e realizzare un’app completa e navigabile.
 
-TypeScript: Fondamenta per Angular
+---
 
-Componenti, Template & Data Binding
+## 🧭 Struttura del progetto
 
-Servizi e Dependency Injection
+L’applicazione è composta da:
+- Un componente principale `DispensaComponent` che gestisce la navigazione e il rendering dinamico
+- Una cartella `sezioni/` contenente i vari argomenti in forma di componenti standalone
+- Animazioni fluide tra le sezioni
+- Stile minimalista e futuristico
 
-Routing e Navigazione
+---
 
-Forms Template-Driven
+## 📚 Argomenti trattati
 
-RxJS & Observable
+- Introduzione & Setup Ambiente
+- TypeScript per Angular
+- Componenti, Template & Data Binding
+- Servizi e Dependency Injection
+- Routing e Navigazione
+- Forms Template-Driven
+- RxJS & Observable
+- Mini-progetti (in sviluppo)
 
-Mini-Progetto 1: Todo List
+---
 
-Mini-Progetto 2: Blog Reader
+## 🚀 Tecnologie
 
-Ripasso Finale & Mock Test
+- Angular 17+
+- TypeScript
+- Standalone Components
+- @angular/animations
+- CSS custom styling
 
-1. Introduzione & Setup Ambiente
-Che cos’è Angular e perché usarlo
+---
 
-Requisiti: Node.js, npm, Angular CLI
+## 📌 Note
 
-Comandi base: ng new, ng serve, ng generate
+⚠️ Il progetto è in fase di sviluppo. Le sezioni verranno completate progressivamente.  
+Ogni argomento è trattato come una **scheda autonoma**, navigabile e animata dinamicamente.
 
-2. TypeScript: Fondamenta per Angular
-Tipi e interfacce
+---
 
-Classi ed ereditarietà
+## 📎 Autore
 
-Moduli ES6 e import/export
-
-3. Componenti, Template & Data Binding
-Creazione di un componente (ng generate component)
-
-Decoratore @Component
-
-Interpolation, Property Binding, Event Binding
-
-Input/Output e comunicazione tra componenti
-
-4. Servizi e Dependency Injection
-Cos’è un servizio in Angular
-
-Decoratore @Injectable
-
-Registrazione e iniezione nel root o in moduli specifici
-
-5. Routing e Navigazione
-Configurare il RouterModule
-
-Definire rotte, parametri, route guards
-
-Link nel template con routerLink
-
-6. Forms Template-Driven
-Importare FormsModule
-
-Creare un form template-driven
-
-Validazioni base e gestione degli errori
-
-7. RxJS & Observable
-Cos’è RxJS e perché usarlo
-
-Creazione di un Observable
-
-Operatorii base: map, filter, subscribe
-
-8. Mini-Progetto 1: Todo List
-Descrizione e requisiti
-
-Struttura componenti
-
-Servizio per CRUD locale
-
-9. Mini-Progetto 2: Blog Reader
-Fetch di dati da API
-
-Visualizzazione lista e dettaglio
-
-Routing dinamico
-
-10. Ripasso Finale & Mock Test
-Esercizi di prova
-
-Checklist argomenti chiave
-
-Consigli per l’esame
-
-© 2025 Mattia Morales
+Mattia Morales • 2025

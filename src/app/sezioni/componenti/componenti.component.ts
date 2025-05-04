@@ -5,8 +5,18 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './componenti.component.html',
-  styleUrl: './componenti.component.css'
+  styleUrls: ['./componenti.component.css']
 })
 export class ComponentiComponent {
+  nomeComponente: string = 'ComponentiComponent';
+  messaggio: string = 'Benvenuto nel mondo dei componenti!';
+  count: number = 0;
 
+  incrementa() {
+    this.count++;
+  }
+
+  resetta() {
+    this.count = 0;
+  }
 }

@@ -1,1 +1,37 @@
-<p>componenti works!</p>
+<section class="componenti">
+    <h2>Componenti, Template & Data Binding</h2>
+
+    <p>
+      In Angular, ogni porzione della UI è un <strong>componente</strong>.
+      Un componente è una combinazione di:
+    </p>
+    <ul>
+      <li>✅ Un template HTML</li>
+      <li>✅ Una classe TypeScript</li>
+      <li>✅ (Opzionale) uno o più file CSS</li>
+    </ul>
+
+    <p><strong>Questo componente si chiama:</strong> {{ nomeComponente }}</p>
+
+    <h3>🔹 Data Binding</h3>
+    <p>La comunicazione tra componenti e template si chiama <em>data binding</em>. Esistono 4 tipi principali:</p>
+    <ul>
+      <li><strong>Interpolation:</strong> {{ messaggio }}</li>
+      <li><strong>Property Binding:</strong> <input [value]="messaggio" readonly /></li>
+      <li><strong>Event Binding:</strong> <button (click)="incrementa()">+1</button></li>
+      <li><strong>Two-way Binding:</strong> <em>(con FormsModule, lo vedremo più avanti)</em></li>
+    </ul>
+
+    <p>Hai cliccato <strong>{{ count }}</strong> volte.</p>
+    <button (click)="resetta()">Resetta</button>
+
+    <hr>
+
+    <h3>📌 Codice TypeScript (semplificato)</h3>
+
+    <h3>💡 Conclusione</h3>
+    <p>
+      Ogni applicazione Angular è composta da una gerarchia di componenti.
+      Saperli creare, collegare e far comunicare è il primo passo per creare interfacce complesse e modulari.
+    </p>
+  </section>
